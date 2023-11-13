@@ -1,0 +1,116 @@
+@media (500px < width) {
+    .listItem {
+        display: flex;
+        align-items: center;
+        width: 550px;
+        height: 65px;
+        padding: 20px 0 20px 24px;
+        user-select: none;
+        position: relative;
+    }
+    
+    .listItemInput {
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        width: 100%;
+        outline: none;
+    }
+    
+    .checkBox {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: 1px solid #E3E4F1;
+        margin-right: 24px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hoverBorder {
+        border: 1px solid line;
+    }
+    
+    .checkComplate {
+        background-image: linear-gradient(to top left, #55DDFF, #C058F3);
+        border: none;
+    }
+    
+    .textComplate {
+        text-decoration: line-through;
+    }
+    
+    .editPanel,.confirmPanel {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        right: 30px;
+    }
+    
+    .pointerCursor {
+        cursor: pointer;
+    }
+}
+
+@media (width <= 500px) {
+    .listItem {
+        display: flex;
+        align-items: center;
+        width: 330px;
+        height: 48px;
+        padding: 20px;
+        user-select: none;
+        position: relative;
+    }
+    
+    .listItemInput {
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        width: 100%;
+        outline: none;
+    }
+    
+    .checkBox {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid #E3E4F1;
+        margin-right: 12px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hoverBorder {
+        border: 1px solid line;
+    }
+    
+    .checkComplate {
+        background-image: linear-gradient(to top left, #55DDFF, #C058F3);
+        border: none;
+    }
+    
+    .textComplate {
+        text-decoration: line-through;
+    }
+    
+    .editPanel,.confirmPanel {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        right: 20px;
+    }
+    
+    .pointerCursor {
+        cursor: pointer;
+    }
+}
+
+
+

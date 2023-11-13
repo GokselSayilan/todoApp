@@ -1,0 +1,138 @@
+@media (500px < width) {
+    .todoBox {
+        width: 550px;
+        max-height: 620px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 10vh;
+    }
+    
+    .createNewTodo {
+        width: 550px;
+        height: 65px;
+        margin-top: 40px;
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    
+    }
+    
+    .createNewTodoInput {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        width: 80%;
+        padding-left: 70px;
+    }
+    
+    .createNewTodoConfirmPanel {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        right: 30px;
+    }
+    
+    .createNewTodoShadow {
+        box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.50);
+    }
+    
+    .todos {
+        overflow: hidden;
+        overflow-y: scroll;
+        max-height: 400px;
+    }
+    
+    .todos::-webkit-scrollbar
+    {
+        width: 4px;
+        background-color: #F5F5F5;
+    }
+    
+    .todos::-webkit-scrollbar-thumb
+    {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: #555;
+    }
+    
+    .dragText {
+        position: absolute;
+        left: 50%;
+        bottom: -50px;
+        transform: translateX(-50%);
+    }
+}
+
+
+@media (width <= 500px) {
+    .todoBox {
+        width: 330px;
+        max-height: 400px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 10vh;
+    }
+    
+    .createNewTodo {
+        width: 330px;
+        height: 48px;
+        margin-top: 40px;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    
+    }
+    
+    .createNewTodoInput {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        width: 80%;
+        padding-left: 50px;
+    }
+    
+    .createNewTodoConfirmPanel {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        right: 20px;
+    }
+    
+    .createNewTodoShadow {
+        box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.50);
+    }
+    
+    .todos {
+        overflow: hidden;
+        overflow-y: scroll;
+        max-height: 250px;
+    }
+    
+    .todos::-webkit-scrollbar
+    {
+        width: 4px;
+        background-color: #F5F5F5;
+    }
+    
+    .todos::-webkit-scrollbar-thumb
+    {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: #555;
+    }
+    
+    .dragText {
+        position: absolute;
+        bottom: -100px;
+        width: 330px;
+        text-align: center;
+    }
+}
+
+

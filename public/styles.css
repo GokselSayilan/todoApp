@@ -1,0 +1,146 @@
+/* resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Örneğin, tüm öğeleri seçerek varsayılan tıklama efektini kaldırabilirsiniz */
+*:active {
+    outline: none; /* varsayılan mavi vurguyu kaldırmak için */
+    -webkit-tap-highlight-color: transparent; /* Safari'de mavi vurguyu kaldırmak için */
+  }
+  
+
+#root {
+    --primaryFont: 'Josefin Sans', sans-serif;
+}
+
+#root .light {
+    --primaryText: #494C6B;
+    --secondaryText: #9495A5;
+    --tertiaryText: #D1D2DA;
+    --primaryBg: #FAFAFA;
+    --secondaryBg: #FFF;
+    --primaryBorder: #E3E4F1;
+    --primaryBoxShadow: rgba(194, 195, 214, 0.50)
+}
+
+#root .dark {
+    --primaryText: #C8CBE7;
+    --secondaryText: #5B5E7E;
+    --tertiaryText: #4D5067;
+    --primaryBg: #171823;
+    --secondaryBg: #25273D;
+    --primaryBorder: #393A4B;
+    --primaryBoxShadow: #00000072;
+}
+
+/* heading-styles */
+
+.headingS,
+.headingM,
+.headingL {
+    font-family: var(--primaryFont);
+}
+
+
+@media (500px < width ) {
+    .headingL {
+        font-size: 40px;
+        letter-spacing: 15px;
+        font-weight: bold;
+    }
+    
+    .headingM {
+        font-size: 18px;
+        letter-spacing: -0.25px;
+        font-weight: 400;
+    }
+    
+    .headingS {
+        font-size: 14px;
+        letter-spacing: -0.20px;
+    }
+}
+
+@media (width < 500px ) {
+    .headingL {
+        font-size: 28px;
+        letter-spacing: 15px;
+        font-weight: bold;
+    }
+    
+    .headingM {
+        font-size: 12px;
+        letter-spacing: -0.25px;
+        font-weight: 400;
+    }
+    
+    .headingS {
+        font-size: 13px;
+        letter-spacing: -0.20px;
+    }
+}
+
+
+
+/* font-weight */
+
+.regularWeight {
+    font-weight: 400;
+}
+
+.boldWeight {
+    font-weight: 700;
+}
+
+/* text-color */
+
+.primaryText,
+.secondaryText,
+.tertiaryText {
+    transition: color 0.5s;
+}
+
+.primaryText {
+    color: var(--primaryText);
+}
+
+.secondaryText {
+    color: var(--secondaryText);
+}
+
+.tertiaryText {
+    color: var(--tertiaryText);
+}
+
+/* bg-color */
+
+.primaryBg,
+.secondaryBg {
+    transition: background-color 0.5s;
+}
+
+.primaryBg {
+    background-color: var(--primaryBg);
+}
+
+.secondaryBg {
+    background-color: var(--secondaryBg);
+}
+
+/* border */
+
+.primaryBorder {
+    border-bottom: 1px solid;
+    border-color: var(--primaryBorder);
+    transition: border-color 0.5s;
+}
+
+/* box-shadow */
+
+.primaryBoxShadow {
+    box-shadow: 0px 35px 50px -15px var(--primaryBoxShadow);
+}

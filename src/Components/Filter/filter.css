@@ -1,0 +1,66 @@
+@media (500px < width) {
+    .filter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 24px;
+        height: 50px;
+        width: 550px;   
+    }
+    
+    .filterItems {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .filterItem {
+        text-transform: capitalize;
+        cursor: pointer;
+    }
+    
+    .filterItem:hover{
+        color: #494C6B;
+    }
+    
+    .selected {
+        color: #3A7CFD !important;
+    }
+    
+    
+}
+
+@media (width <= 500px) {
+    .filter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        height: 45px;
+        width: 330px;   
+    }
+    
+    .filterItems {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        position: absolute;
+        bottom: -60px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 330px;
+        height: 45px;
+    }
+    
+    .filterItem {
+        text-transform: capitalize;
+        cursor: pointer;
+    }
+    
+    .selected {
+        color: #3A7CFD !important;
+    }
+    
+}
+

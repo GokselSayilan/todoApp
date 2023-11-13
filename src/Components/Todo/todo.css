@@ -1,0 +1,17 @@
+.todo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.header{
+    width: 100%;
+}
+
+.headerBg {
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+}
